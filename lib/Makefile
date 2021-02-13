@@ -1,4 +1,4 @@
-include ../config.mk
+include ../src/config.mk
 #
 OBJS = constants.o commLine.o geometry.o geometryDP.o stepPotentials.o intList.o txtUtils.o
 LIBFILE = libDiscrete.a

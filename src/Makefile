@@ -1,4 +1,4 @@
-include ../config.mk
+include config.mk
 #
 OBJS = IO.o random.o energy.o colisio.o DMD.o dims_utils.o least_sq_fit.o ANM.o
 MODS = paramSet.o  Structure.o doubleDMD.o ls_rmsd.o
