@@ -6,7 +6,8 @@ DEBUGNOCHECK =
 #PROFILE =
 PROFILE = -pg
 #
-OPTIONS = -O3 -fimplicit-none -funroll-loops -mtune=generic -Wall -ftree-vectorizer-verbose=1 -ffast-math -fPIE 
+OPTIONS = -O3 -fimplicit-none -funroll-loops -mtune=generic -Wall -ftree-vectorizer-verbose=1 -ffast-math
+LOPTIONS = -fPIE
 #LOPTIONS= -static-libgfortran  
 #F77= /usr/local/bin/gfortran
 #CPP= cpp
