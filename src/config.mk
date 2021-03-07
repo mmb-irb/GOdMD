@@ -4,7 +4,7 @@ DEBUG =
 DEBUGNOCHECK = 
 #DEBUGNOCHECK = -g -fbacktrace -DDEBUG
 #PROFILE =
-PROFILE = -pg
+#PROFILE = -pg
 #
 OPTIONS = -O3 -fimplicit-none -funroll-loops -mtune=generic -Wall -ftree-vectorizer-verbose=1 -ffast-math
 LOPTIONS = -fPIE
