@@ -120,4 +120,3 @@
  logical:: finishMD
  real(dbl):: errorBKP=10000.0
 
- character(100) fileref 

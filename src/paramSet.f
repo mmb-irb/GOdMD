@@ -52,6 +52,7 @@ real*8 :: hstep=1.0
 REAL :: errorAcceptable=1.00 ! 1.25 should be the value
 INTEGER :: nskip=5
 REAL :: sigmaFake=0.02
+CHARACTER(LEN=20) :: fileref='reference.pdb'
 real:: RMSD_DIF=0.01 ! A
 real*8::rcontacts=50.0d0
 LOGICAL :: writingStandard = .TRUE.
@@ -60,10 +61,10 @@ CONTAINS
 !===============================================================================
  subroutine readInputParamSet (unit_i)
    integer, intent(IN) :: unit_i 
-   character(100) fileref
 !
    namelist /input/ tsnap,temp,seed,nbloc,scalFactor,Ener_evo_size,&
-   Ener_evo_size,nskip,tact,errorAcceptable,writingStandard,fileref,natomMin
+!   Ener_evo_size,nskip,tact,errorAcceptable,writingStandard,fileref,natomMin
+   Ener_evo_size,nskip,tact,errorAcceptable,writingStandard,natomMin
 !
    read (unit_i, INPUT)
    ! checking
