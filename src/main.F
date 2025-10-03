@@ -399,7 +399,7 @@ program discrete
     deallocate (atp)
     !
     call cpu_time(tsetup)
-    ! suma l'energia potencial de la conformacio inicial
+    ! suma l'energia potencial de la conformacio inicial'
     call calcEpot(natom,natom, r, stepPts, epotgo, epotfis, epot)
     
     rcm = calcCM(natom, r, xm)
@@ -705,11 +705,11 @@ end
    write (unit_o, '(" |Cut-off in Radius Gyration        | rgyrPercent|",f12.8," |")') rgyrpercent
    write (unit_o, '(" |Cut-off not changing GO interact.(A)|rcut1     |",f12.8," |")') rcut1
    write (unit_o, '(" |Minimum Energy of any well (kcal) | minEnerWell|",f12.8," |")') minEnerWell
-   write (unit_o, '(" |Min time to eq. energy(ps)        |Ener_evo_size |"I5"    |")') Ener_evo_size
-   write (unit_o, '(" |Number of ENM Eigenvectors          |NEVECS    |"I5  "    |")') nevecs
+   write (unit_o, '(" |Min time to eq. energy(ps)        |Ener_evo_size |",I5,"    |")') Ener_evo_size
+   write (unit_o, '(" |Number of ENM Eigenvectors          |NEVECS    |",I5,"    |")') nevecs
    write (unit_o, '(" |Fraction of energy to add at MD     |DEGO_BASE |",f12.8," |")') DEGO_BASE
    write (unit_o, '(" |Minimum acceptable RMSD (A)    |errorAcceptable|",f12.8," |")') errorAcceptable
-   write (unit_o, '(" |Number of frames to skip            |NSKIP     |" I8    " |")') nskip
+   write (unit_o, '(" |Number of frames to skip            |NSKIP     |",I8,"    |")') nskip
    write (unit_o, '(" ------------------------------------------------------------")')
    write (unit_o, '(" | Other                                                    |")')  
    write (unit_o, '(" ------------------------------------------------------------")')
