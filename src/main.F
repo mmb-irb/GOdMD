@@ -713,7 +713,7 @@ end
    write (unit_o, '(" ------------------------------------------------------------")')
    write (unit_o, '(" | Other                                                    |")')  
    write (unit_o, '(" ------------------------------------------------------------")')
-   write (unit_o, '(" | Random generator seed                      |",7X,i5  " |")') seed
+   write (unit_o, '(" | Random generator seed                      |",7X,i5," |")') seed
    write (unit_o, '(" | IDAB, IGOAB, IWR, ISOLV                    |",4X,4i2," |")') IDAB, IGOAB, IWR, ISOLV
    write (unit_o, '(" ------------------------------------------------------------")')
  end subroutine writeInputParamSet
